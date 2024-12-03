@@ -19,6 +19,8 @@ contract Sender {
     function quoteCrossChainCost(
         uint16 targetChain
     ) public view returns (uint256 cost) {
+
+        //Saving the fee cuote in cost
         (cost, ) = wormholeRelayer.quoteEVMDeliveryPrice(
             targetChain,
             0,
