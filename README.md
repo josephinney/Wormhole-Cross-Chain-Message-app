@@ -36,13 +36,13 @@ This project demonstrates cross-chain message passing using Wormhole between Eth
 
  3. The function `receiveWormholeMessages`receives and decode the message. For that:
 
-   3.1 It verifies that the message comes from the `wormholeRelayer`, meaning that only the `wormholeRelayer` can call this function.
+     3.1 It verifies that the message comes from the `wormholeRelayer`, meaning that only the `wormholeRelayer` can call this function.
 
-   3.2 It uses the `isRegisteredSender` modifier to ensure the sender of the msg is registered and can send msg to the Receiver contract.
+     3.2 It uses the `isRegisteredSender` modifier to ensure the sender of the msg is registered and can send msg to the Receiver contract.
 
-   3.3 It decodes the payload to extract the message.
+     3.3 It decodes the payload to extract the message.
 
-   3.4 Emits a `MessageReceived` event with the content of the message.
+     3.4 Emits a `MessageReceived` event with the content of the message.
 
 # TESTS IMPLEMENTED
 
