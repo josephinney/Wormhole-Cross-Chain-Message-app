@@ -47,19 +47,19 @@ This project demonstrates cross-chain message passing using Wormhole between Eth
 ## TESTS IMPLEMENTED
 
    Receiver
-    ✔ Contract Receiver deployed succesfully
-    ✔ Should allow the owner to register a sender
-    ✔ Should not allow a non-owner to register a sender
-    ✔ Should revert if the function (receiveWormholeMessages) is not called by the Wormhole Relayer contract
-    ✔ Should revert if the sender is not registered
-    ✔ Should emit MessageReceived event when a valid message is received from a registered sender
+    - Contract Receiver deployed succesfully
+    - Should allow the owner to register a sender
+    - Should not allow a non-owner to register a sender
+    - Should revert if the function (receiveWormholeMessages) is not called by the Wormhole Relayer contract
+    - Should revert if the sender is not registered
+    - Should emit MessageReceived event when a valid message is received from a registered sender
 
   Sender
-    ✔ Should deploy successfully
-    ✔ Should return a quote for cross-chain cost
-    ✔ Should revert when funds are insufficient for cross-chain delivery
-    ✔ Should send a message succesfully with enough funds
-    ✔ Should interact with WormholeRelayer correctly
+    - Should deploy successfully
+    - Should return a quote for cross-chain cost
+    - Should revert when funds are insufficient for cross-chain delivery
+    - Should send a message succesfully with enough funds
+    - Should interact with WormholeRelayer correctly
 
 
 
